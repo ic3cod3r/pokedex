@@ -1,12 +1,14 @@
 import React from 'react'
-
+import Pokemon from './Pokemon';
+import PokemonForm from './InputBox';
 const Header = () => {
     return (
         <div className="App-topbar">
             <center>
-                <h1>Pokédex</h1>
-                <h6>A React REST API demo using the PokéAPI</h6>
-                <a href="https://pokeapi.co/">https://pokeapi.co/</a>
+            <h1 style={{ background : 'lightblue', color :'darkred' }}>Welcom to my PokeAPI!</h1>
+            <PokemonForm />
+            <Pokemon />
+            <a href="https://pokeapi.co/">https://pokeapi.co/</a>
                 
             </center>
         </div>
@@ -14,4 +16,3 @@ const Header = () => {
 };
 
 export default Header
-
